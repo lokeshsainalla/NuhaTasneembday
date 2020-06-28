@@ -97,7 +97,7 @@ a:active {
 <header>
 <font size="20">
 <marquee scrollamount="7">
-<h1 id="happybirthday" onmouseover="playbgm()" ontouchstart="beginbgm()"><pre><b><big>&#129395<strong><emp><u><i>HAPPY BIRTHDAY NUHA</u></i></strong></emp>&#129395</big></b></pre></h1>
+<h1 id="happybirthday" onmouseover="playbgm()" ontouchstart="playbgm()"><pre><b><big>&#129395<strong><emp><u><i>HAPPY BIRTHDAY NUHA</u></i></strong></emp>&#129395</big></b></pre></h1>
 </marquee>
 </font>
 </header>
@@ -109,7 +109,7 @@ a:active {
 <table border="0">
 <tr>
 <td>
-<li><a href="#happy" onclick="playbgm()" ontouchstart="happy(),beginbgm()">Happy Birthday</li></td>
+<li><a href="#happy" onclick="playbgm()" ontouchstart="playbgm()">Happy Birthday</li></td>
 <td></td>
 <td></td>
 <td></td>
@@ -221,19 +221,6 @@ function startbgm() {
 function playbgm() {
   y.play();
   x.pause();
-}
-
-function beginbgm() {
-  y.play();
-  x.pause();
-}
-
-function happy() {
-   document.getElementById("happybirthday").open =true;
-}
-
-function loki() {
-   document.getElementById("lokesh").open =true;
 }
 
 </script>
