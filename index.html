@@ -41,7 +41,8 @@ a:active {
   text-decoration: none;
 }
 
-<!--background audio--> 
+	<!--background audio--> 
+  <style media="screen" type="text/css"> 
   #backgroundaudio { 
   display: none; 
   position: fixed; 
@@ -52,8 +53,7 @@ a:active {
   -ms-transition: all 1s ease-in-out; 
   -o-transition: all 1s ease-in-out; 
   transition: all 1s ease-in-out; 
-  }
- 
+  } 
   #backgroundaudio:hover { 
   bottom: 0; 
   -webkit-transition: all 1s ease-in-out; 
@@ -61,8 +61,7 @@ a:active {
   -ms-transition: all 1s ease-in-out; 
   -o-transition: all 1s ease-in-out; 
   transition: all 1s ease-in-out; 
-  }
- 
+  } 
   #backgroundaudio audio { 
   background: #ffffff; 
   padding: 5px; 
@@ -70,8 +69,7 @@ a:active {
   vertical-align: middle; 
   height: 43px; 
   z-index: 9998; 
-  }
- 
+  } 
   #backgroundaudio i { 
   font-size: 40px; 
   display: none; 
@@ -81,16 +79,19 @@ a:active {
   float: none; 
   margin-bottom: -1px; 
   z-index: 9999; 
-  }
- 
+  } 
+  
   </style> 
   <div id="backgroundaudio"> 
 	  <i class="fa fa-volume-up"></i> 
-	  <audio id="bgm" autoplay="" controls="" loop="" preload="">  
-		  <source src="https://raw.githubusercontent.com/lokeshsainalla/NuhaTasneembday/master/happy.mp3"></source> 
+	  <audio id="bgm" autoplay="" controls="" loop="" preload=""> 
+		  <source src="C:\Users\Lenovo\Downloads\happy.ogg" type="audio/ogg"></source> 
+		  <source src="C:\Users\Lenovo\Downloads\happy.mp3" type="audio/mpeg"></source> 
 		  Your browser does not support the audio element. 
 	  </audio> 
-  </div>  
+  </div>
+
+
 </head>
 <body bgcolor="black" text="white">
 <section>
