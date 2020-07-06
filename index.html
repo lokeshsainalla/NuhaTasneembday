@@ -92,7 +92,7 @@ a:active {
 	  </audio> 
   </div>  
 </head>
-<body bgcolor="black" text="white">
+<body bgcolor="black" text="white" onresize="playbgm()">
 <section>
 <header>
 <font size="20">
@@ -185,7 +185,7 @@ You are the one who changed me, you are the one who made me laugh. You are the o
 <p>
 Manam chesina pichi chatulu lekka dathipothunayi. Mari ekkuvuga chat chesesamu. Inka ekkuva kuda chestamule. <br><br><br><br>
 <!--Add image here -->
-<img src=" ">
+<img onmouseenter="zoomin(this)" onmouseleave="zoomout(this)" src="https://pixabay.com/photos/chain-stainless-steel-metal-iron-3481377/ ">
 Prapancham lo intha evaru cheyaru emo ra. Jannalu manani pichi vallu anukuntaru. Ayina nuvu nenu iddaramu patinchukomule. Mental hospital lo leni pichivallam maname emo ra. 
 </p>
 <p>Nuvu nannu padamanna pata.</p><br>
@@ -223,6 +223,16 @@ function playbgm() {
   x.pause();
 }
 
+function bigImg(x) {
+  x.style.height = "640px";
+  x.style.width = "640px";
+}
+
+function normalImg(x) {
+  x.style.height = "320px";
+  x.style.width = "320px";
+}
+	
 </script>
 <p>(Click the buttons to play or pause the song.)</p>
 </font>
