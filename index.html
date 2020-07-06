@@ -185,7 +185,7 @@ You are the one who changed me, you are the one who made me laugh. You are the o
 <p>
 Manam chesina pichi chatulu lekka dathipothunayi. Mari ekkuvuga chat chesesamu. Inka ekkuva kuda chestamule. <br><br><br><br>
 <!--Add image here -->
-<img onmouseenter="zoomin(this)" onmouseleave="zoomout(this)" src="https://pixabay.com/photos/chain-stainless-steel-metal-iron-3481377/ ">
+<img id="image" onmouseenter="zoomin(this)" onmouseleave="zoomout(this)" src="">
 Prapancham lo intha evaru cheyaru emo ra. Jannalu manani pichi vallu anukuntaru. Ayina nuvu nenu iddaramu patinchukomule. Mental hospital lo leni pichivallam maname emo ra. 
 </p>
 <p>Nuvu nannu padamanna pata.</p><br>
@@ -201,7 +201,8 @@ Prapancham lo intha evaru cheyaru emo ra. Jannalu manani pichi vallu anukuntaru.
 
 <script>
 var x = document.getElementById("myAudio"); 
-var y =  document.getElementById("bgm");
+var y = document.getElementById("bgm");
+var z = document.getElementById("image");
 
 function playAudio() { 
   x.play();
@@ -223,14 +224,14 @@ function playbgm() {
   x.pause();
 }
 
-function bigImg(x) {
-  x.style.height = "640px";
-  x.style.width = "640px";
+function bigImg(z) {
+  z.style.height = "640px";
+  z.style.width = "640px";
 }
 
-function normalImg(x) {
-  x.style.height = "320px";
-  x.style.width = "320px";
+function normalImg(z) {
+  z.style.height = "320px";
+  z.style.width = "320px";
 }
 	
 </script>
