@@ -1,4 +1,5 @@
 
+
 <html>
 <head>
 <title>Nuha</title>
@@ -1127,7 +1128,7 @@ a:hover {
 <tr></tr>
 <tr></tr>
 <tr>
-<td><li><b><a href="#lokesh" onclick="playbgm()" ontouchstart="playbgm()">Lokesh</b></li></td>
+<td><li><b><a href="#lokesh" onclick="playlokesh()" ontouchstart="playlokesh()">Lokesh</b></li></td>
 </ul>
 </table>
 </font>
@@ -1212,13 +1213,17 @@ Happy Happy Birthday Nuha Baby &#128538;<br>
 
 <font size="5" color="red">
 <h3 id="lokesh">Dear mental,</h3>
-<p class="script">
+<p class="script" onmouseover="playlokesh()" ontouchstart="playlokesh()">
 Thanks for allowing me into your life. 
 You are the one who changed me, you are the one who made me laugh. You are the only one who has transformed me. You have always motivated me and encouraged me thanks for that too. You with your funny words made me laugh out from the bottom of my heart. The moment you entered my life, my life has changed. Every day was a special day with you and every second with you was a beautiful one. Time went so fast chatting with you. There were no bounds to my happiness from the time you entered my life. The way you treated me was awesome. The fun we had together is never forgettable. All the funny conversations we had, all the silly doubts I ask, all the hilarious answers you give are always remembered madam. The quarrels we had, the apologies after them were the funniest of all. Of course your childhood incidents, your experiences (good or bad) and your sweet memories with your friends are lovely. For me it's like a heaven staying with you. I treat it as an honor to have a great person like you as my bestie. Thanks for sharing your love, affection, caring and time. Thanks for introducing PK and Srita two lovely friends into my life. Thanks is a very small word for all those beautiful gifts. Hats off for listening to all those boring stuff which I have told you. For me this small piece of writing is a token of love. I just know you are the person with a golden heart. I don’t even want you to change for anything and for anyone. I don't know whether I will bring a smile on your face or not but I really want a smile on your face forever and ever and ever. I will always be there with you. Please never leave your P........ Yedava all alone. Let’s definitely meet in the future wherever we are on this earth. I will be waiting for your "YES".
 </p>
 <p align="center" class="script">Happy birthday ra. Stay blessed, party hard and stay the same. Badhakam ni mataramu taginchaku. Inka gattiga try chesi badhakani Mahabadhakaniki marchu. Nee beauty secret inka tips evariki chepaku&#129323; secret!! Keep smiling and always be happy. A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday ra! Love you so much.
 </p>
 <p align="right">- LOKESH</p>
+<audio id="lokeshvoice" onended="startbgm()">
+  <source src="https://raw.githubusercontent.com/lokeshsainalla/NuhaTasneembday/master/lokesh%20voice%20over.mp3">
+  Your browser does not support the audio element.
+</audio>
 </font>
 <font size="5" color="skyblue">
 <p align="center" class="script"><b>(Gifts nuvu eppudu shortga sweetga korukuntavu ani telusu kani neeku pichi tepidhamu ani ila pedhaga rasa&#128540;. Inka nee matimarapu STML pichi tikka ivemi cover cheyaledu. Avi kuda cheste inka akkade kindapadipothavu chadavaleka&#128518;. Nee gurinchi inka rasthe idi Indian constitution kanna pedaga avvudhi anduke intha chinnaga thegotesa. Roju cheppinavi malli ikkada kuda chepthe egiri thanesthavu ani chepadam ledu.)</p>
@@ -1235,6 +1240,7 @@ Prapancham lo intha evaru cheyaru emo ra. Jannalu manani pichi vallu anukuntaru.
 <script>
 var dinesh = document.getElementById("dineshvoice");
 var sanchu = document.getElementById("sanchuvoice");
+var loki = document.getElementById("lokeshvoice");
 var bgm = document.getElementById("bgm");
 var z = document.getElementById("image");
 
@@ -1242,24 +1248,35 @@ function playdinesh() {
   dinesh.play();
   bgm.pause();
   sanchu.pause();
+  loki.pause();
 } 
 
 function playsanchu() { 
   sanchu.play();
   bgm.pause();
   dinesh.pause();
+  loki.pause();
+} 
+
+function playlokesh() { 
+  loki.play();
+  bgm.pause();
+  dinesh.pause();
+  sanchu.pause();
 } 
 
 function startbgm() {
   bgm.play();
   dinesh.pause();
   sanchu.pause();
+  loki.pause();
 }
 
 function playbgm() {
   bgm.play();
   dinesh.pause();
   sanchu.pause();
+  loki.pause();
 }
 
 function bigImg(z) {
