@@ -32,6 +32,27 @@ video {
   height: 500px;
 }
 
+.countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e8c152;
+  color: black;
+}
+
 <!--Navigations:nav-->
 nav{
   float:left;
@@ -1312,14 +1333,6 @@ Always remember that I will be there with you, no matter what and never forget o
   Your browser does not support the audio element.
 </audio>
 
-<!--audio 2-->
-<audio id="PKvoice2" controls onended="startbgm()" onmouseover="playPK2()" ontouchstart="playPK2()">
-  <source src="https://www.mboxdrive.com/PK%20voice%20over.mp3">
-  Your browser does not support the audio element.
-</audio>
-<p align="right" class="script">-PK</p>
-</font>
-
 <!--Dinesh-->
 
 <font size="5">
@@ -1400,10 +1413,31 @@ Manam chesina pichi chatulu lekka dathipothunayi. Mari ekkuvuga chat chesesamu. 
 <img class="center" id="image" onmouseenter="bigImg(z)" onmouseleave="normalImg(z)" src="https://github.com/lokeshsainalla/NuhaTasneembday/blob/master/Chat%20image.jpeg?raw=true" style="width:240px;height:240px;">
 <br>
 Prapancham lo intha evaru cheyaru emo ra. Jannalu manani pichi vallu anukuntaru. Ayina nuvu nenu iddaramu patinchukomule. Mental hospital lo leni pichivallam maname emo. Inka ila chepthunte ala velthune untadile.<br>
-Fina ga okate ra life ni epudu enjoy chesthune undu velu aithe kalisi chedamu.<br>
+Final ga okate ra life ni epudu enjoy chesthune undu velu aithe kalisi chedamu.<br>
 ALL THE BEST FOR YOUR FUTURE (Nuvu success avuthavu ani telusu kani edo chepali ani chepthuna.)
 </p>
 </font>
+<font size="10" color="gold">
+<p align="center" class="script">
+From the best day of your calender till now.
+</p>
+</font>
+<p class="script">
+<font size="4">
+<div class="countup" id="countup1">
+  <span class="timeel yrs">00</span>
+  <span class="timeel timeRefYears">yrs</span>
+  <span class="timeel days">00</span>
+  <span class="timeel timeRefDays">days</span>
+  <span class="timeel hrs">00</span>
+  <span class="timeel timeRefHours">hrs</span>
+  <span class="timeel mins">00</span>
+  <span class="timeel timeRefMinutes">mins</span>
+  <span class="timeel secs">00</span>
+  <span class="timeel timeRefSeconds">secs</span>
+</div>
+</font>
+</p>
 <div id="clr">
 <font size="20">
 <marquee scrollamount="7">
@@ -1420,7 +1454,6 @@ var suvee = document.getElementById("suveevoice");
 var sirisha = document.getElementById("sirishavoice");
 var mahi = document.getElementById("mahivoice");
 var PK = document.getElementById("PKvoice");
-var PK1 = document.getElementById("PKvoice2")
 var dinesh = document.getElementById("dineshvoice");
 var sanchu = document.getElementById("sanchuvoice");
 var srita = document.getElementById("srita");
@@ -1438,7 +1471,6 @@ function playcherry() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1454,7 +1486,6 @@ function playharshith() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1470,7 +1501,6 @@ function playsuvee() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1486,7 +1516,6 @@ function playsirisha() {
   suvee.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1502,7 +1531,6 @@ function playmahi() {
   suvee.pause();
   sirisha.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1518,23 +1546,6 @@ function playPK() {
   suvee.pause();
   sirisha.pause();
   mahi.pause();
-  PK1.pause();
-  dinesh.pause();
-  sanchu.pause();
-  srita.pause();
-  nishit.pause();
-  loki.pause();
-} 
-
-function playPK2() { 
-  PK1.play();
-  bgm.pause();
-  cherry.pause();
-  harshith.pause();
-  suvee.pause();
-  sirisha.pause();
-  mahi.pause();
-  PK.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1550,8 +1561,7 @@ function playdinesh() {
   suvee.pause();
   sirisha.pause();
   mahi.pause();
-  PK.pause();
-  PK1.pause();
+  PK.pause();  
   sanchu.pause();
   srita.pause();
   nishit.pause();
@@ -1567,7 +1577,6 @@ function playsanchu() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   srita.pause();
   nishit.pause();
@@ -1583,7 +1592,6 @@ function playsrita() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   nishit.pause();
@@ -1599,7 +1607,6 @@ function playnishit() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1615,7 +1622,6 @@ function playlokesh() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1630,7 +1636,6 @@ function startbgm() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1646,7 +1651,6 @@ function playbgm() {
   sirisha.pause();
   mahi.pause();
   PK.pause();
-  PK1.pause();
   dinesh.pause();
   sanchu.pause();
   srita.pause();
@@ -1673,6 +1677,37 @@ function colr(){
 	setTimeout('colr()', 1000);	
 }
 window.addEventListener('onload', colr());
+
+window.onload = function() {
+  // Month Day, Year Hour:Minute:Second, id-of-element-container
+  countUpFromTime("Aug 16, 2004 12:00:00", 'countup1'); 
+};
+function countUpFromTime(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+    
+  var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+    
+  days = Math.floor(timeDifference / (secondsInADay) * 1);
+  years = Math.floor(days / 365);
+  if (years > 1){ days = days - (years * 365) }
+  hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+  mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+  secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+  var idEl = document.getElementById(id);
+  idEl.getElementsByClassName('yrs')[0].innerHTML = years;
+  idEl.getElementsByClassName('days')[0].innerHTML = days;
+  idEl.getElementsByClassName('hrs')[0].innerHTML = hours;
+  idEl.getElementsByClassName('mins')[0].innerHTML = mins;
+  idEl.getElementsByClassName('secs')[0].innerHTML = secs;
+
+  clearTimeout(countUpFromTime.interval);
+  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+}
 
 </script>
 </body>
